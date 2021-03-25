@@ -1,0 +1,210 @@
+
+body{
+  background: linear-gradient(#af67e9 30%, #6565e7);
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+
+  height: 100vh;
+}
+
+p{
+  font-size: 0.90rem;
+}
+
+hr{
+  border-width: 0 0 1px;
+  border-color: #e7e7e9;
+  border-color: hsl(240, 5%, 91%);
+}
+
+.wrapper{
+  position: relative;
+  width: 1120px;
+  height: 512px;
+  margin: 130px auto 80px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  width: 925px;
+  height: 512px;
+  background-color: #fff;
+  margin: 130px auto 80px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 44px 1px #5840b8ff;
+}
+
+.bg-img-desk{
+  position: absolute;
+  right: 530px;
+  top: -290px;
+}
+
+.bg-img-mob{
+  display: none;
+}
+
+.ill-img-desk{
+  position: absolute;
+  top: 70px;
+  left: -85px;
+}
+
+.ill-img-mob{
+  display: none;
+}
+
+.ill-box{
+  position: absolute;
+  top: 205px;
+  left: -35px;
+  z-index: 1;
+}
+
+.faq-section{
+  display: inline-grid;
+  padding: 60px 90px 60px 10px;
+}
+
+.que-icon-table{
+  display: inline-grid;
+  grid-template-columns: 290px auto;
+  grid-column-gap: 50px;
+}
+
+.icon-div{
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.question{
+  color: #4a4b5e;
+  color: hsl(237, 12%, 33%);
+  margin: 11px auto;
+}
+
+.question:hover{
+  color: #f47c57;
+  color: hsl(14, 88%, 65%);
+}
+
+.que-icon-table:hover{
+  cursor: pointer;
+}
+
+.answer{
+  display: none;
+  color: #787887;
+  color: hsl(240, 6%, 50%);
+  font-size: 0.80rem;
+  line-height: 1.6;
+  margin-top: 0;
+  width: 340px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.attribution a {
+  color: #3e52a3;
+  color: hsl(228, 45%, 44%);
+}
+
+
+/* Visible action using JS */
+
+.jsOnClickQuestions{
+  font-weight: 700;
+}
+
+.jsOnClickAnswer{
+    display: block;
+}
+
+.jsOnClickIcon{
+  transform: rotate(180deg);
+}
+
+
+@media (max-width: 375px) {
+
+  p{
+    font-size: 0.80rem;
+  }
+
+  .wrapper{
+    width: 340px;
+    height: auto;
+    margin: 30px auto;
+  }
+
+  .container{
+    display: block;
+    width: 320px;
+    height: auto;
+    overflow: visible;
+    margin: 180px auto 120px;
+
+  }
+
+  .bg-img-desk{
+    display: none;
+  }
+
+  .bg-img-mob{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .ill-img-desk{
+    display: none;
+  }
+
+  .ill-img-mob{
+    display: inline-block;
+    position: absolute;
+    top: -110px;
+    left: 12px;
+  }
+  .ill-box{
+    display: none;
+  }
+
+  .faq-section{
+    padding: 0;
+    margin: 10px 20px 60px;
+  }
+
+  .faq-heading{
+    text-align: center;
+  }
+
+  .que-icon-table{
+  grid-template-columns: 240px auto;
+  grid-column-gap: 20px;
+}
+
+.answer{
+  width: 250px;
+}
+
+}
+
+/* Ref
+
+- Soft violet: hsl(273, 75%, 66%)  #af67e9
+- Soft blue: hsl(240, 73%, 65%)  #6565e7
+- Very dark desaturated blue: hsl(238, 29%, 16%) #1d1e35
+- Soft red: hsl(14, 88%, 65%) #f47c57
+- Very dark grayish blue: hsl(237, 12%, 33%)  #4a4b5e
+- Dark grayish blue: hsl(240, 6%, 50%)  #787887
+- Light grayish blue: hsl(240, 5%, 91%)  #e7e7e9
+
+font-family: 'Kumbh Sans', sans-serif;
+*/
