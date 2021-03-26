@@ -133,6 +133,10 @@ hr{
 
 
 @media (max-width: 375px) {
+  
+  body{
+    height: 100%;
+  }
 
   p{
     font-size: 0.80rem;
